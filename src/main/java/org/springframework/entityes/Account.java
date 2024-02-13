@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 @Table(name = "account")
 public class Account {
     @Id
+    @Column
     private String bic;
+    @Column
     private String corraccount;
 
     public Account() {
